@@ -14,20 +14,20 @@
             margin: 20px 0;
         }
         table, th, td {
-            border: 2px solid black;
+            border: 3.5px solid black;
         }
         th, td {
             padding: 10px;
             text-align: center;
         }
         th {
-            background-color: #c5e0b4; /* Light green for the header */
+            background-color: #438718; /* Light green for the header */
         }
         .green-bg {
-            background-color: #c5e0b4; /* Light green for header row */
+            background-color: #438718; /* Light green for header row */
         }
         .yellow-bg {
-            background-color: #ffe699; /* Light yellow background */
+            background-color: #eb9066; /* Light yellow background */
         }
         .orange-bg {
             background-color: #f4b183; /* Light orange background */
@@ -43,13 +43,32 @@
         .red-text {
             color: #ff0000; /* Bright red for screen details */
         }
+        .yellow-text {
+            color: #fff200; /* Bright red for screen details */
+        }
+        .blue-text {
+            color: #000068; /* Bright red for screen details */
+        }
+        .white-text {
+            color: #ffffff; /* Bright red for screen details */
+        }
+        .violet-text {
+            color: #930080; /* Bright red for screen details */
+        }
         /* Styling the Laptopy column */
         .laptopy-column {
+            background-color: #f4b183;
             writing-mode: vertical-rl;
             transform: rotate(180deg);
             font-weight: bold;
             color: red;
             border: none;
+            font-family: 'comic';
+        }
+        .data-bg{
+            font-family: Impact;
+            font-size: large;
+            background-color: #ffffff;
         }
         td.no-border {
             border: none;
@@ -60,53 +79,53 @@
 
     <table>
         <tr>
-            <th colspan="5">Dane komputerowe - Raman Makarau 1Pg2</th>
+            <th colspan="5" class="data-bg">Dane komputerowe - Raman Makarau 1Pg2</th>
             <th rowspan="8" class="laptopy-column">Laptopy</th> <!-- Merged the rows under Laptopy -->
         </tr>
         <tr class="green-bg">
-            <th>Nazwa</th>
-            <th>Processor</th>
-            <th>RAM</th>
-            <th>Karta graficzna</th>
-            <th>Ekran</th>
+            <th class="white-text">Nazwa</th>
+            <th class="white-text">Processor</th>
+            <th class="white-text">RAM</th>
+            <th class="white-text">Karta graficzna</th>
+            <th class="white-text">Ekran</th>
         </tr>
         <tr class="yellow-bg">
             <td>PREDATOR Helios Neo PHN16-71 16"</td>
-            <td><span class="yellow-bg">Intel Core i9-13900HX</span></td>
-            <td>16GB, DDR5, 5600MHz</td>
-            <td>NVIDIA GeForce RTX 4060 + Intel UHD Graphics</td>
+            <td class="yellow-text"><span class="yellow-bg">Intel Core i9-13900HX</span></td>
+            <td class="violet-text">16GB, DDR5, 5600MHz</td>
+            <td class="blue-text">NVIDIA GeForce RTX 4060 + Intel UHD Graphics</td>
             <td class="red-text">16", 2560 x 1600px, Matryca, IPS, LED, 165Hz</td>
         </tr>
         <tr class="orange-bg">
             <td>ASUS TUF Gaming A15 FA507NU-TT904W 15.6"</td>
-            <td><span class="orange-bg">AMD Ryzen 7 7735HS</span></td>
-            <td>16GB, DDR5, 4800MHz</td>
-            <td>NVIDIA GeForce RTX 4050 + AMD Radeon 660M</td>
+            <td class="yellow-text"><span class="orange-bg">AMD Ryzen 7 7735HS</span></td>
+            <td class="violet-text">16GB, DDR5, 4800MHz</td>
+            <td class="blue-text">NVIDIA GeForce RTX 4050 + AMD Radeon 660M</td>
             <td class="red-text">15.6", 1920 x 1080px, Matryca, IPS, 144Hz</td>
         </tr>
         <tr class="yellow-bg">
             <td>ASUS TUF Gaming F15 FX507ZC4-HN018W 15.6"</td>
-            <td><span class="yellow-bg">Intel Core i5-12500H</span></td>
-            <td>16GB, DDR4</td>
-            <td>NVIDIA GeForce RTX 3050 + Intel UHD Graphics</td>
+            <td class="yellow-text"><span class="yellow-bg">Intel Core i5-12500H</span></td>
+            <td class="violet-text">16GB, DDR4</td>
+            <td class="blue-text">NVIDIA GeForce RTX 3050 + Intel UHD Graphics</td>
             <td class="red-text">15.6", 1920 x 1080px, Matryca, IPS, 144Hz</td>
         </tr>
         <tr class="orange-bg">
             <td>LENOVO LOQ 15ARP9 15.6"</td>
-            <td><span class="orange-bg">AMD Ryzen 7 7435HS</span></td>
-            <td>24GB, DDR5, 4800MHz</td>
-            <td>NVIDIA GeForce RTX 4050</td>
+            <td class="yellow-text"><span class="orange-bg">AMD Ryzen 7 7435HS</span></td>
+            <td class="violet-text">24GB, DDR5, 4800MHz</td>
+            <td class="blue-text">NVIDIA GeForce RTX 4050</td>
             <td class="red-text">15.6", 1920 x 1080px, Matryca, IPS, 144Hz</td>
         </tr>
         <tr class="brown-bg">
             <td>ACER Nitro V 15 ANV15-41-R0T0 15.6"</td>
-            <td><span class="brown-bg">AMD Ryzen 5 7535HS</span></td>
-            <td>16GB, DDR5</td>
-            <td>NVIDIA GeForce RTX 2050 + AMD Radeon 660M</td>
+            <td class="yellow-text"><span class="brown-bg">AMD Ryzen 5 7535HS</span></td>
+            <td class="violet-text">16GB, DDR5</td>
+            <td class="blue-text">NVIDIA GeForce RTX 2050 + AMD Radeon 660M</td>
             <td class="red-text">15.6", 1920 x 1080px, Matryca, IPS, 144Hz</td>
         </tr>
         <tr>
-            <td colspan="5" class="footer">Dane komputerowe</td>
+            <td colspan="5" class="green-bg white-text" style="font-family: Georgia">Dane komputerowe</td>
         </tr>
     </table>
 
